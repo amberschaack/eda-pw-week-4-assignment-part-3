@@ -19,15 +19,36 @@ console.log('Adding cheese to basket', addItem('cheese'));
 console.log(`Basket now contains: ${basket}`);
 
 function listItems(array) {
-  for (i = 0; i < basket.length; i++) {
-    console.log(basket[i]);
+  for (i = 0; i < array.length; i++) {
+    console.log(array[i]);
   }
 }
 console.log('in listItems function:');
 console.log(listItems(basket));
 
-function empty() {}
+function empty(array) {
+  while (array.length > 0) {
+    array.pop();
+  }
+}
 console.log('in empty function:');
+empty(basket);
+console.log('Basket now contains:', basket);
+
+// end required features
+
+// begin stretch goals
+const maxItems = 5;
+
+function isFull() {
+    if (basket.length < maxItems) {
+        return false;
+    } else {
+        return true;
+    }
+}
+console.log('in isFull function:');
+console.log(isFull());
 
 // DO NOT MODIFY
 // Used for automated testing
