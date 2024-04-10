@@ -5,10 +5,10 @@ let basket = [];
 console.log('current basket:', basket);
 
 function addItem(item) {
-    basket.push(item);
-    if (basket.length > 0) {
-        return true;
-    }
+  basket.push(item);
+  if (basket.length > 0) {
+    return true;
+  }
 }
 console.log('in addItem function:');
 console.log(`Basket contains: ${basket}`);
@@ -18,8 +18,13 @@ console.log('Adding carrots to basket', addItem('carrots'));
 console.log('Adding cheese to basket', addItem('cheese'));
 console.log(`Basket now contains: ${basket}`);
 
-function listItems(array) {}
+function listItems(array) {
+  for (i = 0; i < basket.length; i++) {
+    console.log(basket[i]);
+  }
+}
 console.log('in listItems function:');
+console.log(listItems(basket));
 
 function empty() {}
 console.log('in empty function:');
