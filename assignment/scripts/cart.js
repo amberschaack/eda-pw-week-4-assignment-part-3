@@ -46,7 +46,6 @@ console.log('Basket now contains:', basket);
 
 // begin stretch goals
 
-
 function isFull() {
   if (basket.length < maxItems) {
     return false;
@@ -56,6 +55,20 @@ function isFull() {
 }
 console.log('in isFull function:');
 console.log(isFull());
+
+/*
+function removeItem(item) {
+  for (i = 0; i < basket.length; i++) {
+    if (basket.indexOf(i) === item) {
+      console.log(index);
+    } else {
+      console.log('null');
+    }
+  }
+}
+console.log('in removeItem function:');
+removeItem('chicken');
+*/
 
 // DO NOT MODIFY
 // Used for automated testing
